@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Father's Day Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="./Images/papa.jpg" alt="Starting card image" class="starting-image">
+        
+        <div class="hidden-messages">
+            <div class="hidden-message" id="message1">
+                <img src="./Images/dad1.jpg" alt="Photo 1">
+            </div>
+            <div class="hidden-message" id="message2">
+                <img src="./Images/dad2.jpg" alt="Photo 2">
+            </div>
+            <div class="hidden-message" id="message3">
+                <img src="./Images/dad3.jpg" alt="Photo 3">
+            </div>
+            <div class="hidden-message" id="message4">
+                <img src="./Images/papa4.jpg" alt="Photo 4">
+            </div>
+            <div class="hidden-message" id="message5">
+                <img src="./Images/papa2.jpg" alt="Photo 5">
+            </div>
+            <div class="hidden-message" id="message6">
+                <img src="./Images/papa3.jpg" alt="Photo 6">
+            </div>
+            <div class="father-info" id="fatherInfo"></div>
+        </div>
+
+        <div class="text-wrapper">
+            <h1>Happy Father's Day</h1>
+        </div>
+
+        <div class="gift-box">
+            <div class="ribbon"></div>
+            <div class="box" onclick="showDadMessage()">Open</div>
+        </div>
+
+        <div class="navigation" id="navigation">
+            <button class="nav-button left" onclick="previousMessage()">←</button>
+            <div id="messageCount"></div>
+            <button class="nav-button right" onclick="nextMessage()">→</button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
